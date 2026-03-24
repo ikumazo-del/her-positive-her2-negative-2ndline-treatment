@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ホルモン受容体陽性・HER2陰性の進行・再発乳がんと治療についてのお話</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Hiragino Sans','Noto Sans JP',sans-serif;background:#faf9f7;color:#222;font-size:15px;line-height:1.85}
+.hd{background:linear-gradient(135deg,#1a3a5c 0%,#2563a8 100%);color:#fff;padding:30px 20px 26px;position:relative;overflow:hidden}
+.hd::before{content:'';position:absolute;top:-60px;right:-60px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.06)}
+.hd::after{content:'';position:absolute;bottom:-40px;left:-40px;width:160px;height:160px;border-radius:50%;background:rgba(255,255,255,.04)}
+.hd .hospital{font-size:11px;opacity:.75;letter-spacing:.1em;margin-bottom:12px}
+.hd h1{font-size:19px;font-weight:700;line-height:1.6;margin-bottom:8px}
+.hd .date{font-size:11px;opacity:.65;margin-top:10px}
+nav{background:#fff;padding:11px 16px;overflow-x:auto;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.08);position:sticky;top:0;z-index:10;border-bottom:1px solid #eee}
+nav a{display:inline-block;background:#f0f2f5;color:#1a3a5c;border-radius:20px;font-size:11px;padding:5px 12px;margin-right:5px;text-decoration:none;font-weight:600;border:1px solid #dde3ec;cursor:pointer}
+nav a:hover{background:#1a3a5c;color:#fff;border-color:#1a3a5c}
+.wrap{max-width:720px;margin:0 auto;padding:24px 18px 40px}
+.sec{margin-bottom:36px}
+h2{font-size:18px;font-weight:700;color:#1a3a5c;margin:32px 0 14px;padding-bottom:8px;border-bottom:2px solid #2563a8;display:flex;align-items:center;gap:10px}
+h2 .icon{font-size:20px}
+h3{font-size:15px;font-weight:700;color:#2563a8;margin:20px 0 10px;padding:8px 14px;background:#f0f5ff;border-left:4px solid #2563a8;border-radius:0 8px 8px 0}
+h3.new{background:#fff5e8;border-left-color:#e08000;color:#7a4000}
+p{margin-bottom:12px;line-height:1.9}
+.intro-box{background:linear-gradient(135deg,#f0f5ff,#e8f0fd);border:1px solid #c0d4f0;border-radius:12px;padding:18px 20px;margin-bottom:20px;font-size:14px;line-height:1.9;color:#1a3a5c}
+.intro-box .lead{font-size:16px;font-weight:700;margin-bottom:8px;color:#1a3a5c}
+.type-card{background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.08);overflow:hidden;margin-bottom:16px}
+.type-card .tc-hd{background:linear-gradient(135deg,#1a3a5c,#2563a8);color:#fff;padding:14px 18px;font-size:14px;font-weight:700}
+.type-card .tc-body{padding:14px 18px;font-size:14px;line-height:1.9}
+.drug-card{background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.07);overflow:hidden;margin:12px 0 20px}
+.drug-card .dc-hd{padding:14px 18px;display:flex;align-items:flex-start;gap:12px}
+.dc-ico{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.dc-name{font-weight:700;font-size:16px;line-height:1.35}
+.dc-sub{font-size:11px;color:#888;margin-top:3px}
+.dc-badge{display:inline-block;font-size:10px;font-weight:700;padding:2px 9px;border-radius:4px;margin-top:6px}
+.b-ok{background:#e6f4ea;color:#1a6a2a}
+.b-oral{background:#fdf4e6;color:#a06010}
+.b-iv{background:#f5f0fb;color:#5a3a8c}
+.b-new{background:#fff0d8;color:#c05000;border:1px solid #e09040}
+.drug-body{padding:0 18px 18px;font-size:14px;line-height:1.9}
+.drug-point{background:#f8f9fb;border-radius:8px;padding:12px 14px;margin-top:10px}
+.drug-point .pt-title{font-size:12px;font-weight:700;color:#888;letter-spacing:.06em;margin-bottom:6px}
+.drug-point ul{padding-left:18px}
+.drug-point li{margin-bottom:4px}
+.warn{background:#fff8f5;border-left:4px solid #e05a00;border-radius:0 10px 10px 0;padding:13px 16px;margin:12px 0;font-size:13.5px;color:#7a2e00;line-height:1.8}
+.warn b{display:block;margin-bottom:4px;font-size:14px}
+.info{background:#f0f9f4;border-left:4px solid #1a7a4a;border-radius:0 10px 10px 0;padding:13px 16px;margin:12px 0;font-size:13.5px;color:#1a4a2a;line-height:1.8}
+.note{background:#f5f0fb;border-left:4px solid #5a3a8c;border-radius:0 10px 10px 0;padding:13px 16px;margin:12px 0;font-size:13.5px;color:#3a1a5c;line-height:1.8}
+.new-box{background:#fff8e8;border-left:4px solid #e08000;border-radius:0 10px 10px 0;padding:13px 16px;margin:12px 0;font-size:13.5px;color:#7a4000;line-height:1.8}
+.exam-card{background:#fff;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.07);padding:16px 18px;margin:10px 0 14px}
+.exam-title{font-size:15px;font-weight:700;color:#1a3a5c;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.exam-tag{background:#1a3a5c;color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px}
+.exam-body{font-size:14px;line-height:1.9;color:#333}
+.exam-name{display:inline-block;background:#e8f0fd;color:#1a4a9a;font-size:12px;font-weight:700;padding:3px 10px;border-radius:5px;margin:4px 0}
+.flow{margin:16px 0}
+.flow-step{background:#fff;border:1.5px solid #dde3ec;border-radius:10px;padding:13px 16px;margin-bottom:6px;font-size:14px;line-height:1.8}
+.flow-step .fs-tag{display:inline-block;font-size:10px;font-weight:700;padding:2px 9px;border-radius:4px;margin-bottom:6px}
+.fs-1st{background:#e8f0fd;color:#1a4a9a}
+.fs-2nd{background:#fdf4e6;color:#a06010}
+.fs-adc{background:#e6f4ea;color:#1a6a2a}
+.fs-new{background:#fff0d8;color:#c05000}
+.flow-arr{text-align:center;color:#aaa;font-size:18px;margin:2px 0}
+.closing{background:linear-gradient(135deg,#f0f5ff,#e8f4ec);border-radius:14px;padding:22px 22px;margin-top:30px;font-size:14px;line-height:1.95;color:#1a3a5c}
+.closing .cl-title{font-size:17px;font-weight:700;margin-bottom:12px;color:#1a3a5c}
+.sep{height:1px;background:linear-gradient(to right,transparent,#ddd,transparent);margin:28px 0}
+footer{background:#1a3a5c;color:rgba(255,255,255,.7);text-align:center;padding:22px 18px;font-size:12px;line-height:2;margin-top:10px}
+footer .ft-note{font-size:10px;opacity:.6;margin-top:6px}
+</style>
+</head>
+<body>
+
+<div class="hd">
+  <div class="hospital">総合犬山中央病院　乳腺外科</div>
+  <h1>ホルモン受容体陽性・HER2陰性の<br>進行・再発乳がんと<br>治療についてのお話</h1>
+  <div class="date">2026年3月23日作成</div>
+</div>
+
+<nav>
+  <a onclick="document.getElementById('intro').scrollIntoView({behavior:'smooth'});return false;">はじめに</a>
+  <a onclick="document.getElementById('type').scrollIntoView({behavior:'smooth'});return false;">がんのタイプ</a>
+  <a onclick="document.getElementById('first').scrollIntoView({behavior:'smooth'});return false;">1次治療</a>
+  <a onclick="document.getElementById('second').scrollIntoView({behavior:'smooth'});return false;">2次治療</a>
+  <a onclick="document.getElementById('adc').scrollIntoView({behavior:'smooth'});return false;">ADCという薬</a>
+  <a onclick="document.getElementById('exam').scrollIntoView({behavior:'smooth'});return false;">検査</a>
+  <a onclick="document.getElementById('flow').scrollIntoView({behavior:'smooth'});return false;">治療の流れ</a>
+  <a onclick="document.getElementById('closing').scrollIntoView({behavior:'smooth'});return false;">最後に</a>
+</nav>
+
+<div class="wrap">
+
+<!-- はじめに -->
+<div class="sec" id="intro">
+<h2><span class="icon">🌿</span>はじめに</h2>
+<div class="intro-box">
+  <div class="lead">この説明書をお読みの方へ</div>
+  乳がんと診断され、治療を続けてこられた方、あるいは再発・転移という言葉を告げられた方が、この説明書を手に取られているかもしれません。<br><br>
+  不安や戸惑いを感じるのは、とても自然なことです。<br><br>
+  この文書は、「ホルモン受容体陽性・HER2陰性」というタイプの進行・再発乳がんについて、どのような治療の流れがあるのかをお伝えするものです。わからないことがあれば、どうぞ遠慮なく外来でご質問ください。ご一緒に考えます。
+</div>
+</div>
+
+<div class="sep"></div>
+
+<!-- がんのタイプ -->
+<div class="sec" id="type">
+<h2><span class="icon">🔍</span>あなたの乳がんのタイプについて</h2>
+<p>乳がんにはいくつかのタイプがあります。「ホルモン受容体陽性・HER2陰性」とは、がん細胞が女性ホルモン（エストロゲン）の刺激を受けて増えやすいタイプで、HER2というタンパク質はあまり多くないことを意味します。</p>
+<div class="type-card">
+  <div class="tc-hd">このタイプの特徴</div>
+  <div class="tc-body">
+    ・乳がん全体の<strong>70〜80%</strong>を占める、最も多いタイプです<br>
+    ・ホルモンの働きを抑える薬（内分泌療法）がよく効くことが多い<br>
+    ・他のタイプと比べると比較的穏やかな経過をたどる傾向があります<br>
+    ・近年、新しい薬が次々と登場し、治療の選択肢が大きく広がっています
+  </div>
+</div>
+</div>
+
+<div class="sep"></div>
+
+<!-- 1次治療 -->
+<div class="sec" id="first">
+<h2><span class="icon">💊</span>1次治療：まず使う薬について</h2>
+<p>進行・再発乳がんの治療では、まず「内分泌療法」と「CDK4/6阻害薬」を組み合わせた治療を行うことが標準となっています。</p>
+
+<div class="drug-card">
+  <div class="dc-hd" style="background:linear-gradient(135deg,#f0f5ff,#e0ecfd)">
+    <div class="dc-ico" style="background:#2563a8;color:#fff">💊</div>
+    <div>
+      <div class="dc-name" style="color:#1a3a5c">内分泌療法</div>
+      <div class="dc-sub">アロマターゼ阻害薬・フルベストラント など</div>
+      <span class="dc-badge b-ok">経口または注射</span>
+    </div>
+  </div>
+  <div class="drug-body">
+    女性ホルモンの働きを抑えてがんの増殖を止める治療です。アリミデックス・フェマーラ・アロマシンなどの飲み薬や、フェソロデックス（注射薬）が使われます。副作用は比較的穏やかで、多くの方が日常生活を続けながら治療できます。
+  </div>
+</div>
+
+<div class="drug-card">
+  <div class="dc-hd" style="background:linear-gradient(135deg,#fff5e6,#fde8c0)">
+    <div class="dc-ico" style="background:#c8941a;color:#fff">💊</div>
+    <div>
+      <div class="dc-name" style="color:#7a4a00">CDK4/6阻害薬</div>
+      <div class="dc-sub">パルボシクリブ・リボシクリブ・アベマシクリブ</div>
+      <span class="dc-badge b-oral">経口薬</span>
+    </div>
+  </div>
+  <div class="drug-body">
+    がん細胞の増殖に必要な仕組みをブロックする飲み薬です。内分泌療法と組み合わせることで治療効果が大きく高まります。多くの方に数年にわたって効果が続き、生活の質を保ちながら治療できます。
+  </div>
+</div>
+</div>
+
+<div class="sep"></div>
+
+<!-- 2次治療 -->
+<div class="sec" id="second">
+<h2><span class="icon">🌱</span>2次治療：次のステップについて</h2>
+<p>1次治療を続けているうちに、がんが薬に慣れて効きにくくなることがあります。これを「耐性（たいせい）」と呼びます。そのような場合に次の治療（2次治療）へと移行します。</p>
+
+<div class="info">
+  <strong>「あなたのがんがどのような遺伝子の変化を持っているか」によって、最も効果的な薬が変わります。</strong><br>
+  このため、治療を進める前に血液検査や組織検査でがんの特徴を詳しく調べます。<br>
+  近年は選択肢が格段に増えており、一つの薬が効きにくくなっても次の手があります。
+</div>
+
+<h3>① ESR1遺伝子変異がある場合　→　イムルリオ（イムルネストラント）</h3>
+<div class="drug-card">
+  <div class="dc-hd" style="background:linear-gradient(135deg,#f0f6ff,#e0ecfd)">
+    <div class="dc-ico" style="background:#2563a8;color:#fff">💊</div>
+    <div>
+      <div class="dc-name" style="color:#1a3a5c">イムルリオ錠 200mg</div>
+      <div class="dc-sub">日本イーライリリー</div>
+      <span class="dc-badge b-ok">🇯🇵 2025年12月　日本承認</span>
+      <span class="dc-badge b-oral" style="margin-left:4px">経口・1日1回</span>
+    </div>
+  </div>
+  <div class="drug-body">
+    <p>1次治療を続けるうちにがんがホルモン療法に抵抗するための変化（ESR1遺伝子変異）を起こすことがあります。血液検査（リキッドバイオプシー）で調べられます。この変異が見つかった場合に使える国内初の経口SERD（飲み薬）です。</p>
+    <div class="drug-point">
+      <div class="pt-title">この薬のポイント</div>
+      <ul>
+        <li>1日1回の飲み薬。注射不要で生活の負担が少ない</li>
+        <li>ESR1変異に強く働きかける。従来の注射薬フルベストラントより有効</li>
+        <li>主な副作用：悪心（吐き気）・倦怠感・ほてり・関節痛</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<h3>② PIK3CA・AKT1・PTEN遺伝子変異がある場合　→　トルカプ＋フルベストラント</h3>
+<div class="drug-card">
+  <div class="dc-hd" style="background:linear-gradient(135deg,#fff5e6,#fde8c0)">
+    <div class="dc-ico" style="background:#c8941a;color:#fff">💊</div>
+    <div>
+      <div class="dc-name" style="color:#7a4a00">トルカプ錠（カピバセルチブ）＋フルベストラント</div>
+      <div class="dc-sub">アストラゼネカ</div>
+      <span class="dc-badge b-ok">🇯🇵 2024年3月　日本承認</span>
+      <span class="dc-badge b-oral" style="margin-left:4px">経口・間欠投与</span>
+    </div>
+  </div>
+  <div class="drug-body">
+    <p>がんの増殖に関わる「PI3K/AKT経路」という信号の異常がある場合（HR+/HER2-乳がんの約半数）に使える治療です。4日間飲んで3日間休むリズムで服用し、注射薬フルベストラントと組み合わせます。</p>
+    <div class="drug-point">
+      <div class="pt-title">この薬のポイント</div>
+      <ul>
+        <li>主な副作用：下痢・皮膚の発疹・悪心・血糖値の上昇</li>
+        <li>糖尿病のある方は事前にご相談が必要です</li>
+      </ul>
+    </div>
+    <div class="warn"><b>⚠️ 血糖値に注意</b>血糖値が上がりやすい副作用があります。糖尿病をお持ちの方や血糖値が高めの方は必ずご相談ください。</div>
+  </div>
+</div>
+
+<h3>③ 遺伝性乳がん（gBRCA遺伝子変異）がある場合　→　オラパリブ / タラゾパリブ</h3>
+<div class="info">HR+/HER2-乳がん全体の5〜7%程度。若年発症・ご家族に乳がん・卵巣がんの方がいる場合は検査をお勧めします。</div>
+
+<div class="drug-card">
+  <div class="dc-hd" style="background:linear-gradient(135deg,#f0fbf4,#daf2e4)">
+    <div class="dc-ico" style="background:#1a7a4a;color:#fff">💊</div>
+    <div>
+      <div class="dc-name" style="color:#0a4a2a">オラパリブ（リムパーザ）</div>
+      <div class="dc-sub">アストラゼネカ・MSD　/ 日本承認済み</div>
+      <span class="dc-badge b-ok">🇯🇵 日本承認済み</span>
+      <span class="dc-badge b-oral" style="margin-left:4px">経口・1日2回</span>
+    </div>
+  </div>
+  <div class="drug-body">
+    <p>BRCA遺伝子変異があるがん細胞の弱点を突くPARP阻害薬（飲み薬）。臨床試験（OlympiAD試験）で化学療法よりも長く病気の進行を抑えることが示されました（PFS 7.0ヶ月 vs 4.2ヶ月）。</p>
+    <div class="drug-point">
+      <div class="pt-title">この薬のポイント</div>
+      <ul>
+        <li>主な副作用：悪心（吐き気）・疲労・貧血・嘔吐</li>
+        <li>遺伝カウンセリングとセットで血液検査を行います</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="drug-card">
+  <div class="dc-hd" style="background:linear-gradient(135deg,#f0fbf4,#daf2e4)">
+    <div class="dc-ico" style="background:#2a8a5a;color:#fff">💊</div>
+    <div>
+      <div class="dc-name" style="color:#0a4a2a">タラゾパリブ（タラゼナ）</div>
+      <div class="dc-sub">ファイザー</div>
+      <span class="dc-badge b-ok">🇯🇵 2024年4月　日本収載・発売</span>
+      <span class="dc-badge b-oral" style="margin-left:4px">経口・1日1回</span>
+    </div>
+  </div>
+  <div class="drug-body">
+    <p>同じくPARP阻害薬で、1日1回の飲み薬です。EMBRACA試験でQOL（生活の質）の改善が明確に示されています（PFS 8.6ヶ月 vs 5.6ヶ月）。</p>
+    <div class="drug-point">
+      <div class="pt-title">この薬のポイント</div>
+      <ul>
+        <li>1日1回投与でスケジュールがシンプル</li>
+        <li>主な副作用：貧血が出やすい。定期的な血液検査が大切です</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<h3>④ 遺伝子変異がない・内分泌療法をもう少し続けられる場合</h3>
+<div class="drug-card">
+  <div class="dc-hd" style="background:#f8f7f4">
+    <div class="dc-ico" style="background:#5a6a8a;color:#fff">💊</div>
+    <div>
+      <div class="dc-name" style="color:#1a3a5c">エベロリムス（アフィニトール）＋エキセメスタン（アロマシン）</div>
+      <div class="dc-sub">日本承認済み</div>
+      <span class="dc-badge b-ok">🇯🇵 日本承認済み</span>
+    </div>
+  </div>
+  <div class="drug-body">
+    <p>遺伝子変異がなくても内分泌療法をもう一段階続ける選択肢があります。エベロリムスはがん細胞の増殖を別の経路で抑える薬で、エキセメスタンとの組み合わせで使います。</p>
+    <div class="drug-point">
+      <div class="pt-title">この薬のポイント</div>
+      <ul>
+        <li>主な副作用：口内炎が起きやすい。うがい薬などで対処します</li>
+        <li>間質性肺炎・血糖値の上昇にも注意が必要です</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="sep"></div>
+
+<!-- ADC -->
+<div class="sec" id="adc">
+<h2><span class="icon">🎯</span>ADC（抗体薬物複合体）という新しいタイプの薬</h2>
+
+<div class="note">
+  <strong>「賢いミサイル型の抗がん剤」</strong><br>
+  ADCは、がん細胞の目印に結びつく「抗体」に抗がん剤をくっつけた薬です。がん細胞にだけ届くよう設計されているため、正常な細胞へのダメージを減らしながらがん細胞に集中して働きます。
+</div>
+
+<h3>⑤ エンハーツ（トラスツズマブ デルクステカン）</h3>
+<div class="drug-card">
+  <div class="dc-hd" style="background:linear-gradient(135deg,#f0fbf4,#daf2e4)">
+    <div class="dc-ico" style="background:#1a7a4a;color:#fff">💉</div>
+    <div>
+      <div class="dc-name" style="color:#0a4a2a">エンハーツ（T-DXd）</div>
+      <div class="dc-sub">第一三共・アストラゼネカ / HER2低発現・超低発現適応</div>
+      <span class="dc-badge b-ok">🇯🇵 日本収載済み</span>
+      <span class="dc-badge b-iv" style="margin-left:4px">点滴・3週ごと</span>
+    </div>
+  </div>
+  <div class="drug-body">
+    <p>以前は「HER2陰性」と判定されていた乳がんでも、よく調べるとHER2というタンパク質がわずかに存在することがあります。これを「HER2低発現」または「HER2超低発現」と呼びます。ホルモン受容体陽性乳がんの多くの方がこのカテゴリーに当てはまります。エンハーツはこのわずかなHER2を目印にして、がん細胞に直接抗がん剤を届ける点滴薬です。</p>
+    <div class="drug-point">
+      <div class="pt-title">この薬のポイント</div>
+      <ul>
+        <li>大規模臨床試験（DESTINY-Breast06試験）で化学療法より長くがんの進行を抑えられた（PFS 13.2ヶ月 vs 8.1ヶ月）</li>
+        <li>化学療法を使う前の段階から使用できる（2025年承認）</li>
+        <li>主な副作用：間質性肺炎（肺の炎症）・吐き気・嘔吐・倦怠感・脱毛</li>
+      </ul>
+    </div>
+    <div class="warn"><b>⚠️ 間質性肺炎（ILD）について</b>息切れ・乾いた咳・発熱が続く場合はすぐにご連絡ください。早期に対処することが大切です。</div>
+  </div>
+</div>
+
+<h3>⑥ ダトロウェイ（ダトポタマブ デルクステカン）</h3>
+<div class="drug-card">
+  <div class="dc-hd" style="background:linear-gradient(135deg,#f5f0fb,#ece0f8)">
+    <div class="dc-ico" style="background:#5a3a8c;color:#fff">💉</div>
+    <div>
+      <div class="dc-name" style="color:#3a1a6c">ダトロウェイ（Dato-DXd）</div>
+      <div class="dc-sub">第一三共・アストラゼネカ</div>
+      <span class="dc-badge b-ok">🇯🇵 2025年3月　日本収載・発売</span>
+      <span class="dc-badge b-iv" style="margin-left:4px">点滴・3週ごと</span>
+    </div>
+  </div>
+  <div class="drug-body">
+    <p>TROP2（トロップ2）というタンパク質を目印にしたADCです。エンハーツとは異なるタンパク質を標的にしているため、HER2の発現量に関わらず使うことができます。化学療法をすでに受けた後の段階で使用します。</p>
+    <div class="drug-point">
+      <div class="pt-title">この薬のポイント</div>
+      <ul>
+        <li>臨床試験（TROPION-Breast01試験）でがんの進行を抑えることが示された（PFS 7.0ヶ月 vs 4.9ヶ月）</li>
+        <li>HER2の発現量に関わらず使用可能</li>
+        <li>主な副作用：口内炎・脱毛・倦怠感・悪心</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<h3 class="new">⑦ トロデルビ（サシツズマブ ゴビテカン）🆕 2026年3月23日　日本承認</h3>
+
+
+<div class="drug-card">
+  <div class="dc-hd" style="background:linear-gradient(135deg,#fff5f0,#ffe8d8)">
+    <div class="dc-ico" style="background:#c05000;color:#fff">💉</div>
+    <div>
+      <div class="dc-name" style="color:#7a2e00">トロデルビ（サシツズマブ ゴビテカン）</div>
+      <div class="dc-sub">ギリアド・サイエンシズ</div>
+      <span class="dc-badge b-new">🆕 HR+/HER2- 2026年3月23日承認</span>
+      <span class="dc-badge b-iv" style="margin-left:4px">点滴・3週ごと（1・8日目）</span>
+    </div>
+  </div>
+  <div class="drug-body">
+    <p>ダトロウェイと同じくTROP2（トロップ2）というタンパク質を目印にしたADCです。ただし薬の中身（がん細胞を攻撃する成分）がダトロウェイとは異なります。</p>
+    <p>化学療法をより多く（2〜4ライン）受けた後の段階で使用します。TROPiCS-02という大規模臨床試験では、化学療法と比べて、がんの進行を抑えられる期間だけでなく、<strong>生存期間も約3.2ヶ月延長する</strong>ことが示されました。ADCでOS（全生存期間）の有意な改善が示されたことは重要な特徴です。</p>
+    <div class="drug-point">
+      <div class="pt-title">この薬のポイント</div>
+      <ul>
+        <li>臨床試験（TROPiCS-02試験）でPFS 5.5ヶ月 vs 4.0ヶ月、OS 14.4ヶ月 vs 11.2ヶ月（化学療法比）</li>
+        <li>生存期間の改善が示された（TROP2標的ADCとして重要な強み）</li>
+        <li>3週間に1回（1日目と8日目）の点滴投与</li>
+        <li>主な副作用：白血球の減少（感染のリスクに注意）・下痢・吐き気・脱毛・疲労</li>
+      </ul>
+    </div>
+    <div class="warn">
+      <b>⚠️ 白血球減少・下痢に注意</b>
+      白血球（感染と戦う細胞）が減りやすいため、発熱・倦怠感がある場合はすぐにご連絡ください。下痢も起こりやすいため、対処法を事前に確認しておきましょう。
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="sep"></div>
+
+<!-- 検査 -->
+<div class="sec" id="exam">
+<h2><span class="icon">🔬</span>検査について</h2>
+<p>2次治療では「どの薬があなたに合っているか」を調べるための検査が重要です。主な検査は次の3つです。</p>
+
+<div class="exam-card">
+  <div class="exam-title">
+    <span class="exam-tag">血液</span>
+    リキッドバイオプシー（液体生検）
+  </div>
+  <div class="exam-body">
+    採血だけで、がんの遺伝子変異を調べることができます。ESR1変異など、治療中に新しく生じた変異も検出できます。<br><br>
+    <span class="exam-name">FoundationOne Liquid CDx（ファウンデーションワン リキッドCDx）</span><br>
+    代表的な検査で、血液の中を流れているがんのDNA（ctDNA）を解析します。組織を採取しなくても現在のがんの状態を調べることができます。
+  </div>
+</div>
+
+<div class="exam-card">
+  <div class="exam-title">
+    <span class="exam-tag">組織</span>
+    腫瘍生検・組織の遺伝子検査
+  </div>
+  <div class="exam-body">
+    転移したがんの一部を採取して詳しく調べます。HER2の発現状況や遺伝子変異の確認に用います。<br><br>
+    <span class="exam-name">FoundationOne CDx（ファウンデーションワンCDx）</span><br>
+    組織を使った網羅的な遺伝子検査で、複数の変異を一度に調べられます。日本では保険が適用されます。転移巣が見つかった場合、できれば改めて組織を採取して調べることをお勧めしています。
+  </div>
+</div>
+
+<div class="exam-card">
+  <div class="exam-title">
+    <span class="exam-tag">血液</span>
+    遺伝子検査（gBRCA変異）
+  </div>
+  <div class="exam-body">
+    BRCA遺伝子など、生まれつきの遺伝子変異を調べます。採血で検査します。<br><br>
+    この検査は必ず<strong>遺伝カウンセリング（遺伝の専門家との面談）とセット</strong>で行います。ご家族への影響についても、専門家と一緒に丁寧に考えていきます。
+  </div>
+</div>
+</div>
+
+<div class="sep"></div>
+
+<!-- 治療の流れ -->
+<div class="sec" id="flow">
+<h2><span class="icon">📋</span>治療全体の流れ（イメージ）</h2>
+<p style="font-size:13px;color:#888;margin-bottom:14px">※ すべての方に同じ流れが当てはまるわけではありません。あなたの状態に合わせてご一緒に考えます。</p>
+
+<div class="flow">
+  <div class="flow-step">
+    <span class="fs-tag fs-1st">1次治療</span>
+    <div>内分泌療法 ＋ CDK4/6阻害薬<br><span style="font-size:13px;color:#666">多くの方に数年にわたって効果が続きます</span></div>
+  </div>
+  <div class="flow-arr">↓ がんが薬に慣れてきたら（耐性）</div>
+  <div class="flow-arr" style="font-size:12px;color:#aaa">遺伝子変異の検査（リキッドバイオプシー / 組織検査）</div>
+  <div class="flow-step">
+    <span class="fs-tag fs-2nd">2次治療（遺伝子変異に合わせた薬）</span>
+    <div>
+      ESR1変異あり → <strong>イムルリオ</strong>（飲み薬）<br>
+      PIK3CA/AKT1/PTEN変異あり → <strong>トルカプ＋フルベストラント</strong><br>
+      gBRCA変異あり → <strong>オラパリブ または タラゾパリブ</strong><br>
+      変異なし・内分泌療法継続可 → <strong>エベロリムス＋エキセメスタン</strong>
+    </div>
+  </div>
+  <div class="flow-arr">↓ さらに次のステップへ / HER2発現を再確認</div>
+  <div class="flow-step">
+    <span class="fs-tag fs-adc">ADC（抗体薬物複合体）による治療</span>
+    <div>
+      HER2低発現または超低発現で化学療法未使用 → <strong>エンハーツ</strong><br>
+      化学療法を1〜2ライン受けた後 → <strong>ダトロウェイ</strong>
+    </div>
+  </div>
+  <div class="flow-arr">↓ さらに多くの化学療法を経た後</div>
+  <div class="flow-step">
+    <span class="fs-tag fs-new">後期ライン 🆕 新しい選択肢</span>
+    <div>
+      化学療法を2〜4ライン受けた後 → <strong>トロデルビ</strong>（2026年3月23日　承認）<br>
+      <span style="font-size:13px;color:#666">臨床試験でがんの進行を抑えるだけでなく、生存期間の延長も示された薬です</span>
+    </div>
+  </div>
+</div>
+
+<div class="info" style="margin-top:16px">
+  <strong>ひとつの薬が効きにくくなっても、次の選択肢があります。</strong><br>
+  治療の選択肢が広がっているということは、あなたが治療を長く続けられる可能性が高まっているということでもあります。トロデルビのように、後期のラインでも新しい選択肢が加わり続けています。
+</div>
+</div>
+
+<div class="sep"></div>
+
+<!-- 最後に -->
+<div class="sec" id="closing">
+<div class="closing">
+  <div class="cl-title">🌿 最後に</div>
+  <p>治療を続けていくうえで大切なのは、「どの薬をいつ使うか」という順番が、あなた全体の治療に大きく関わってくるということです。担当医は、あなたの状態・検査結果・これまでの治療経過・生活の状況を総合的に判断しながら、一緒に考えていきます。</p>
+  <p>副作用のこと、仕事や家庭のこと、気持ちのこと——どんな些細なことでも、外来でお話しください。答えが出なくても、一緒に考えることに意味があると思っています。</p>
+  <p style="margin-bottom:0">あなたの物語の中で、この治療が少しでも力になれますように。</p>
+</div>
+</div>
+
+</div>
+
+<footer>
+  総合犬山中央病院　乳腺外科<br>
+  本文書は2026年3月23日時点の情報に基づいて作成しています<br>
+  治療の詳細・最新情報については担当医にご確認ください<br>
+  <div class="ft-note">参照：EMBER-3試験 / CAPItello-291試験 / OlympiAD試験 / EMBRACA試験 / DESTINY-Breast06試験 / TROPION-Breast01試験 / TROPiCS-02試験</div>
+</footer>
+
+</body>
+</html>

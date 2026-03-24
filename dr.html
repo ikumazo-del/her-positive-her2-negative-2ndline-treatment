@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HR+/HER2- 2次治療ガイド 2026</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Hiragino Sans','Noto Sans JP',sans-serif;background:#f5f5f3;color:#1a1a1a;font-size:14px;line-height:1.7}
+.hd{background:linear-gradient(135deg,#1a3a5c,#2563a8);color:#fff;padding:24px 18px 20px;position:relative;overflow:hidden}
+.hd::before{content:'';position:absolute;top:-50px;right:-50px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,.06)}
+.hd .ver{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);border-radius:4px;font-size:10px;padding:2px 10px;margin-bottom:10px;letter-spacing:.08em}
+.hd h1{font-size:20px;font-weight:700;line-height:1.5;margin-bottom:6px}
+.hd .sub{font-size:12px;opacity:.75;margin-bottom:14px}
+.hd .pills{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px}
+.hd .pills span{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:20px;font-size:10px;padding:3px 10px;color:rgba(255,255,255,.9)}
+nav{background:#fff;padding:10px 14px;overflow-x:auto;white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,.08);position:sticky;top:0;z-index:10}
+nav a{display:inline-block;background:#f0f0f0;color:#333;border-radius:20px;font-size:11px;padding:5px 11px;margin-right:5px;text-decoration:none;font-weight:500;cursor:pointer}
+nav a:hover{background:#1a3a5c;color:#fff}
+.wrap{padding:18px 16px}
+h2{font-size:17px;font-weight:700;color:#1a3a5c;border-bottom:2px solid #2563a8;padding-bottom:7px;margin:26px 0 14px;display:flex;align-items:center;gap:10px}
+h2 .sn{background:#1a3a5c;color:#fff;width:28px;height:28px;border-radius:6px;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+h3{font-size:14px;font-weight:700;color:#2563a8;margin:18px 0 9px;padding-left:10px;border-left:3px solid #4a90d9}
+.card{background:#fff;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.08);overflow:hidden;margin-bottom:14px}
+.card-hd{padding:13px 15px;display:flex;align-items:flex-start;gap:11px}
+.ico{width:42px;height:42px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:19px;flex-shrink:0}
+.nm{font-weight:700;font-size:15px;color:#1a3a5c;line-height:1.3}
+.dsub{font-size:11px;color:#888;margin-top:2px}
+.badges{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.badge{font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px}
+.ok{background:#e6f4ea;color:#1a6a2a}
+.ng{background:#fde8d8;color:#9a3a10}
+.fd{background:#e8f0fd;color:#1a4a9a}
+.or{background:#fdf4e6;color:#a06010}
+.pu{background:#f5f0fb;color:#5a3a8c}
+.new{background:#fff0e0;color:#c05000;border:1px solid #e08040}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:14px}
+th{background:#1a3a5c;color:#fff;padding:9px 11px;text-align:left;font-size:11px;font-weight:700;letter-spacing:.04em}
+td{padding:9px 11px;border-bottom:1px solid #eee;vertical-align:top;line-height:1.65}
+tr:nth-child(even) td{background:#f8f8f8}
+td strong{color:#1a3a5c}
+.warn{background:#fef5f4;border-left:4px solid #c0392b;border-radius:0 8px 8px 0;padding:12px 14px;margin:10px 0 16px;font-size:12.5px;color:#c0392b;line-height:1.65}
+.warn b{display:block;margin-bottom:3px}
+.info{background:#f0f9f4;border-left:4px solid #1a7a4a;border-radius:0 8px 8px 0;padding:12px 14px;margin:10px 0 16px;font-size:12.5px;color:#1a4a2a;line-height:1.65}
+.note{background:#f5f0fb;border-left:4px solid #5a3a8c;border-radius:0 8px 8px 0;padding:12px 14px;margin:10px 0 16px;font-size:12.5px;color:#3a1a5c;line-height:1.65}
+.new-box{background:#fff8e8;border-left:4px solid #e08000;border-radius:0 8px 8px 0;padding:12px 14px;margin:10px 0 16px;font-size:12.5px;color:#7a4000;line-height:1.65}
+.cdx{background:#eef4ff;border:1px solid #b8d0f0;border-radius:10px;padding:14px 15px;margin:10px 0 18px}
+.cdx-t{font-size:13px;font-weight:700;color:#2563a8;margin-bottom:11px;display:flex;align-items:center;gap:7px}
+.cdx-t span{background:#2563a8;color:#fff;width:22px;height:22px;border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0}
+.cdx table th{background:#2563a8}
+.pfs{padding:10px 15px 14px;border-top:1px solid #f0f0f0}
+.pfs .pt{font-size:11px;color:#666;margin-bottom:3px}
+.bar{height:8px;background:#eee;border-radius:4px;overflow:hidden;margin-bottom:4px}
+.bf{height:100%;border-radius:4px}
+.pfs .pv{font-size:11px;display:flex;justify-content:space-between;color:#555;margin-bottom:8px}
+.seq-box{background:#fff;border:1px solid #ddd;border-radius:10px;padding:12px 14px;margin-bottom:8px;font-size:13px;line-height:1.75}
+.seq-box .st{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;margin-bottom:6px}
+.arr{text-align:center;color:#aaa;font-size:15px;margin:3px 0}
+.sep{height:1px;background:#ddd;margin:22px 0}
+footer{background:#1a3a5c;color:rgba(255,255,255,.65);text-align:center;padding:20px 16px;font-size:11px;line-height:1.9;margin-top:28px}
+</style>
+</head>
+<body>
+
+<div class="hd">
+  <div class="ver">臨床参照 / 2026年3月23日版</div>
+  <h1>切除不能・進行再発 HR+/HER2- 乳がん<br>2次治療オプション ガイド</h1>
+  <div class="sub">CDK4/6阻害薬＋内分泌療法後の増悪を想定　／　⚠️ 日本未収載薬剤には明記</div>
+  <div class="pills">
+    <span>ESR1変異</span><span>AKT経路変異</span><span>gBRCA変異</span>
+    <span>HER2-low/ultralow</span><span>TROP2-ADC</span><span>コンパニオン診断</span>
+
+  </div>
+</div>
+
+<nav>
+  <a onclick="document.getElementById('s0').scrollIntoView({behavior:'smooth'});return false;">①確認事項</a>
+  <a onclick="document.getElementById('s1').scrollIntoView({behavior:'smooth'});return false;">②ESR1変異</a>
+  <a onclick="document.getElementById('s2').scrollIntoView({behavior:'smooth'});return false;">③AKT経路</a>
+  <a onclick="document.getElementById('s3').scrollIntoView({behavior:'smooth'});return false;">④変異なし</a>
+  <a onclick="document.getElementById('s4').scrollIntoView({behavior:'smooth'});return false;">⑤gBRCA</a>
+  <a onclick="document.getElementById('s5').scrollIntoView({behavior:'smooth'});return false;">⑥エンハーツ</a>
+  <a onclick="document.getElementById('s6').scrollIntoView({behavior:'smooth'});return false;">⑦ダトロウェイ</a>
+  <a onclick="document.getElementById('s6b').scrollIntoView({behavior:'smooth'});return false;">⑧トロデルビ🆕</a>
+  <a onclick="document.getElementById('s7').scrollIntoView({behavior:'smooth'});return false;">⑨シーケンス</a>
+  <a onclick="document.getElementById('s8').scrollIntoView({behavior:'smooth'});return false;">⑩CDx一覧</a>
+</nav>
+
+<div class="wrap">
+
+<!-- ① 確認事項 -->
+<div id="s0">
+<h2><span class="sn">1</span>2次治療を決める前に確認する4項目</h2>
+<table>
+<tr><th width="28%">確認項目</th><th>内容</th></tr>
+<tr><td><strong>①耐性機序</strong></td><td>ESR1変異 / PIK3CA・AKT1・PTEN変異。CDK4/6阻害薬+AI後の液体生検でESR1変異が40〜60%に検出。進行時点での再検査を推奨。</td></tr>
+<tr><td><strong>②HER2発現</strong></td><td>転移巣生検でIHCを再評価。HER2-ultralow（IHC 0 with 微弱膜染色）・HER2-low（IHC 1+ or 2+/ISH-）の判定がADC適応に直結する。</td></tr>
+<tr><td><strong>③前治療効果</strong></td><td>CDK4/6阻害薬奏効持続期間は内分泌感受性の指標。長期奏効例は次ラインの内分泌療法でも効果が期待できる。</td></tr>
+<tr><td><strong>④内分泌継続</strong></td><td>継続可能 → バイオマーカードリブン内分泌療法を優先。急速進行・内臓クリーゼ → ADC・化学療法を考慮。</td></tr>
+</table>
+</div>
+
+<div class="sep"></div>
+
+<!-- ② ESR1変異 -->
+<div id="s1">
+<h2><span class="sn">2</span>ESR1変異陽性 → 経口SERD</h2>
+
+<h3>2-A. イムルリオ（イムルネストラント）✅ 日本収載</h3>
+<div class="card">
+  <div class="card-hd" style="background:linear-gradient(135deg,#f0f6ff,#e8f0fd)">
+    <div class="ico" style="background:#2563a8;color:#fff">💊</div>
+    <div>
+      <div class="nm">イムルリオ錠 200mg</div>
+      <div class="dsub">イムルネストラントトシル酸塩 / 日本イーライリリー</div>
+      <div class="badges">
+        <span class="badge ok">🇯🇵 2025年12月22日 承認</span>
+        <span class="badge fd">国内初の経口SERD</span>
+        <span class="badge or">経口・1日1回</span>
+      </div>
+    </div>
+  </div>
+  <table>
+  <tr><th width="28%">項目</th><th>内容</th></tr>
+  <tr><td>適応</td><td>内分泌療法後に増悪した<strong>ESR1遺伝子変異</strong>を有するHR+/HER2- 手術不能または再発乳がん</td></tr>
+  <tr><td>用法・用量</td><td><strong>200mg 1日1回 経口（単剤）</strong></td></tr>
+  <tr><td>根拠試験</td><td>EMBER-3試験（第3相）：ESR1変異陽性集団でPFS 5.49ヶ月 vs 3.84ヶ月（HR 0.54）</td></tr>
+  <tr><td>主な副作用</td><td>悪心・倦怠感・ほてり・関節痛。注射不要の経口薬で利便性大。</td></tr>
+  <tr><td>今後の展開</td><td>EMBER-3 C群（+アベマシクリブ）でESR1変異有無に関わらずPFS延長確認。承認拡大に注目。</td></tr>
+  </table>
+  <div class="pfs">
+    <div class="pt">PFS中央値（EMBER-3 ESR1変異陽性集団）</div>
+    <div class="bar"><div class="bf" style="width:65%;background:#2563a8"></div></div>
+    <div class="pv"><span><strong>イムルリオ 5.49ヶ月</strong></span><span style="color:#999">HR 0.54</span></div>
+    <div class="bar"><div class="bf" style="width:43%;background:#bbb"></div></div>
+    <div class="pv"><span style="color:#888">医師選択 3.84ヶ月</span></div>
+  </div>
+</div>
+
+<h3>2-B. エラセストラント（エレムジア）⚠️【日本未収載】</h3>
+<div class="card">
+  <div class="card-hd" style="background:#fff8f5">
+    <div class="ico" style="background:#c0392b;color:#fff">💊</div>
+    <div>
+      <div class="nm">エレムジア（Orserdu）</div>
+      <div class="dsub">エラセストラント / Radius Health</div>
+      <div class="badges">
+        <span class="badge ng">⚠️ 日本未収載</span>
+        <span class="badge fd">FDA 2023年1月承認</span>
+        <span class="badge or">経口・1日1回</span>
+      </div>
+    </div>
+  </div>
+  <table>
+  <tr><th width="28%">項目</th><th>内容</th></tr>
+  <tr><td>用法・用量</td><td>345mg 1日1回 経口（単剤）</td></tr>
+  <tr><td>根拠試験</td><td>EMERALD試験：ESR1変異陽性集団でPFS 3.8ヶ月 vs 1.9ヶ月（HR 0.55）。CDK4/6阻害薬+AI後の長期奏効例（≥12ヶ月）でPFS 8.6ヶ月。</td></tr>
+  <tr><td>主な副作用</td><td>悪心・筋骨格痛・倦怠感</td></tr>
+  <tr><td>イムルリオとの違い</td><td>PFS効果量はやや小さい。日本ではイムルリオが先行承認のため第一選択。</td></tr>
+  </table>
+</div>
+
+<div class="cdx">
+<div class="cdx-t"><span>🔬</span>コンパニオン診断：ESR1遺伝子変異検査（2-A・2-B 共通）</div>
+<table>
+<tr><th width="26%">項目</th><th>内容</th></tr>
+<tr><td>推奨検体</td><td><strong>【第1選択】リキッドバイオプシー（液体生検）血漿/ctDNA</strong>　採血のみ。進行時点のリアルタイム変異を反映。組織再生検困難でも施行可。<br>【代替】腫瘍組織（FFPE）NGS（初診時は検出率低）</td></tr>
+<tr><td>検査法</td><td>NGS / デジタルPCR（ddPCR）<br><strong>FoundationOne Liquid CDx（ファウンデーションワン リキッドCDx）</strong></td></tr>
+<tr><td>主要変異</td><td>ESR1 Y537S / Y537N / D538G / E380Q 等。Y537Sはフルベストラント耐性最強。イムルリオはY537Sにも有効。</td></tr>
+<tr><td>実施時期</td><td>CDK4/6阻害薬+AI療法中または増悪時。初診時（AI開始前）は原則不要。</td></tr>
+</table>
+</div>
+</div>
+
+<div class="sep"></div>
+
+<!-- ③ AKT経路 -->
+<div id="s2">
+<h2><span class="sn">3</span>AKT経路変異陽性 → PI3K/AKT阻害薬</h2>
+
+<h3>3-A. トルカプ（カピバセルチブ）＋フルベストラント ✅ 日本収載</h3>
+<div class="card">
+  <div class="card-hd" style="background:linear-gradient(135deg,#fff5e6,#fde8c0)">
+    <div class="ico" style="background:#c8941a;color:#fff">💊</div>
+    <div>
+      <div class="nm">トルカプ錠（カピバセルチブ）160mg・200mg</div>
+      <div class="dsub">アストラゼネカ</div>
+      <div class="badges">
+        <span class="badge ok">🇯🇵 2024年3月26日 承認・5月発売</span>
+        <span class="badge fd">世界初 汎AKT阻害薬</span>
+        <span class="badge or">経口・間欠投与</span>
+      </div>
+    </div>
+  </div>
+  <table>
+  <tr><th width="28%">項目</th><th>内容</th></tr>
+  <tr><td>適応</td><td>内分泌療法後に増悪した<strong>PIK3CA、AKT1またはPTEN変異</strong>を有するHR+/HER2- 手術不能または再発乳がん</td></tr>
+  <tr><td>用法・用量</td><td><strong>400mg 1日2回（4日間投与→3日間休薬 1サイクル）＋フルベストラント必須</strong></td></tr>
+  <tr><td>根拠試験</td><td>CAPItello-291試験（NEJM 2023）：AKT経路変異集団でPFS 7.3ヶ月 vs 3.1ヶ月（HR 0.50, p&lt;0.001）</td></tr>
+  <tr><td>主な副作用</td><td>下痢（G3-4: 12.3%）・発疹（G3-4: 11.0%）・悪心（34.8%）・高血糖（G3-4: 1.9%）</td></tr>
+  <tr><td>対象変異</td><td>PIK3CA・AKT1・PTENいずれか1つ以上陽性（3遺伝子が対象）</td></tr>
+  </table>
+  <div class="pfs">
+    <div class="pt">PFS中央値（CAPItello-291 AKT経路変異集団）</div>
+    <div class="bar"><div class="bf" style="width:80%;background:#c8941a"></div></div>
+    <div class="pv"><span><strong>トルカプ＋フルベストラント 7.3ヶ月</strong></span><span style="color:#999">HR 0.50</span></div>
+    <div class="bar"><div class="bf" style="width:34%;background:#bbb"></div></div>
+    <div class="pv"><span style="color:#888">プラセボ＋フルベストラント 3.1ヶ月</span></div>
+  </div>
+</div>
+<div class="warn"><b>⚠️ DKA・高血糖警告</b>市販後調査でDKA発症・死亡例あり。1型糖尿病・インスリン依存性2型DM・HbA1c 8.0%以上は原則禁忌。投与前HbA1c確認・内分泌科連携が必須。</div>
+
+<h3>3-B. アルペリシブ（ピクレイ）＋フルベストラント ⚠️【日本未収載】</h3>
+<div class="card">
+  <div class="card-hd" style="background:#fff8f5">
+    <div class="ico" style="background:#c0392b;color:#fff">💊</div>
+    <div>
+      <div class="nm">ピクレイ（Piqray）</div>
+      <div class="dsub">アルペリシブ / ノバルティス</div>
+      <div class="badges">
+        <span class="badge ng">⚠️ 日本未収載</span>
+        <span class="badge fd">FDA 2019年5月承認</span>
+      </div>
+    </div>
+  </div>
+  <table>
+  <tr><th width="28%">項目</th><th>内容</th></tr>
+  <tr><td>薬剤クラス</td><td>PI3Kα選択的阻害薬（<strong>PIK3CA変異のみ</strong>が対象：トルカプより標的が狭い）</td></tr>
+  <tr><td>根拠試験</td><td>SOLAR-1試験：PIK3CA変異陽性集団でPFS 11.0ヶ月 vs 5.7ヶ月（HR 0.65）</td></tr>
+  <tr><td>主な副作用</td><td>高血糖（G3-4: <strong>36.6%：最大の課題</strong>）・下痢・発疹・悪心</td></tr>
+  <tr><td>トルカプとの比較</td><td>高血糖の頻度・重症度がトルカプより著しく高い。日本では現時点でトルカプの安全プロファイルが優位。直接比較試験なし。</td></tr>
+  </table>
+</div>
+
+<div class="cdx">
+<div class="cdx-t"><span>🔬</span>コンパニオン診断：PIK3CA/AKT1/PTEN変異検査（3-A・3-B）</div>
+<table>
+<tr><th width="26%">項目</th><th>内容</th></tr>
+<tr><td>検体</td><td>腫瘍組織（FFPE）または液体生検（ctDNA）<br>PTEN欠失は液体生検での検出が困難 → 組織IHCとの組み合わせが有用</td></tr>
+<tr><td>検査法</td><td><strong>FoundationOne CDx（ファウンデーションワンCDx：日本保険適用）</strong><br>PTEN欠失：PTEN IHCも補助的に使用</td></tr>
+<tr><td>3-A 対象変異</td><td>PIK3CA / AKT1 / PTEN いずれか1つ以上</td></tr>
+<tr><td>3-B 対象変異</td><td><strong>PIK3CA変異のみ</strong>（3-Aより狭い）</td></tr>
+</table>
+</div>
+</div>
+
+<div class="sep"></div>
+
+<!-- ④ 変異なし -->
+<div id="s3">
+<h2><span class="sn">4</span>変異なし・不明（内分泌療法継続可能な場合）</h2>
+<table>
+<tr><th width="34%">選択肢</th><th>概要</th><th width="16%">日本</th></tr>
+<tr><td><strong>エベロリムス＋エキセメスタン</strong></td><td>BOLERO-2試験根拠（PFS HR 0.45）。副作用：口内炎・ILD・高血糖。</td><td><span class="badge ok">✅収載</span></td></tr>
+<tr><td><strong>フルベストラント単剤</strong></td><td>フェソロデックス 500mg 筋注（月1回）。ESR1変異Y537Sへの効果は限定的。</td><td><span class="badge ok">✅収載</span></td></tr>
+<tr><td><strong>CDK4/6阻害薬継続（検討中）</strong></td><td>postMONARCH試験進行中。エビデンス確立待ち。</td><td>—</td></tr>
+</table>
+</div>
+
+<div class="sep"></div>
+
+<!-- ⑤ gBRCA -->
+<div id="s4">
+<h2><span class="sn">5</span>gBRCA1/2変異陽性 → PARP阻害薬</h2>
+<div class="info">HR+/HER2-乳がん全体の5〜7%程度。若年・家族歴がある患者では2次治療の検討と並行して早期検査を。検査結果まで2〜4週間のリードタイムがあるため早めの紹介が治療選択に直結する。</div>
+
+<h3>5-A. オラパリブ（リムパーザ）✅ 日本収載</h3>
+<div class="card">
+  <div class="card-hd" style="background:linear-gradient(135deg,#f0fbf4,#e0f5e8)">
+    <div class="ico" style="background:#1a7a4a;color:#fff">💊</div>
+    <div>
+      <div class="nm">リムパーザ錠（オラパリブ）100mg・150mg</div>
+      <div class="dsub">アストラゼネカ・MSD</div>
+      <div class="badges">
+        <span class="badge ok">🇯🇵 日本承認済み</span>
+        <span class="badge or">経口・1日2回</span>
+      </div>
+    </div>
+  </div>
+  <table>
+  <tr><th width="28%">項目</th><th>内容</th></tr>
+  <tr><td>用法・用量</td><td><strong>300mg 1日2回 経口（単剤）</strong></td></tr>
+  <tr><td>根拠試験</td><td>OlympiAD試験：PFS 7.0ヶ月 vs 4.2ヶ月（HR 0.58）。化学療法比で有意改善。</td></tr>
+  <tr><td>主な副作用</td><td>悪心（最多）・疲労・貧血・嘔吐。骨髄抑制・MDS/AML（稀）。</td></tr>
+  </table>
+  <div class="pfs">
+    <div class="pt">PFS中央値（OlympiAD）</div>
+    <div class="bar"><div class="bf" style="width:78%;background:#1a7a4a"></div></div>
+    <div class="pv"><span><strong>オラパリブ 7.0ヶ月</strong></span><span style="color:#999">HR 0.58</span></div>
+    <div class="bar"><div class="bf" style="width:47%;background:#bbb"></div></div>
+    <div class="pv"><span style="color:#888">化学療法 4.2ヶ月</span></div>
+  </div>
+</div>
+
+<h3>5-B. タラゾパリブ（タラゼナ）✅ 日本収載</h3>
+<div class="card">
+  <div class="card-hd" style="background:linear-gradient(135deg,#f0fbf4,#e0f5e8)">
+    <div class="ico" style="background:#2a8a5a;color:#fff">💊</div>
+    <div>
+      <div class="nm">タラゼナカプセル（タラゾパリブ）0.25mg・1mg</div>
+      <div class="dsub">ファイザー</div>
+      <div class="badges">
+        <span class="badge ok">🇯🇵 2024年4月23日 収載・発売</span>
+        <span class="badge or">経口・1日1回</span>
+      </div>
+    </div>
+  </div>
+  <table>
+  <tr><th width="28%">項目</th><th>内容</th></tr>
+  <tr><td>用法・用量</td><td><strong>1mg 1日1回 経口（単剤）</strong>。1日1回でシンプル。</td></tr>
+  <tr><td>根拠試験</td><td>EMBRACA試験：PFS 8.6ヶ月 vs 5.6ヶ月（HR 0.54）。QOL改善が明確。</td></tr>
+  <tr><td>主な副作用</td><td>貧血（G3-4: 39%）が最大の課題。オラパリブより骨髄抑制頻度高。</td></tr>
+  </table>
+  <div class="pfs">
+    <div class="pt">PFS中央値（EMBRACA）</div>
+    <div class="bar"><div class="bf" style="width:95%;background:#2a8a5a"></div></div>
+    <div class="pv"><span><strong>タラゾパリブ 8.6ヶ月</strong></span><span style="color:#999">HR 0.54</span></div>
+    <div class="bar"><div class="bf" style="width:62%;background:#bbb"></div></div>
+    <div class="pv"><span style="color:#888">化学療法 5.6ヶ月</span></div>
+  </div>
+</div>
+
+<div class="cdx">
+<div class="cdx-t"><span>🔬</span>コンパニオン診断：gBRCA1/2変異検査（5-A・5-B 共通）</div>
+<table>
+<tr><th width="26%">項目</th><th>内容</th></tr>
+<tr><td>検体</td><td><strong>血液（末梢血/生殖細胞系列DNA）</strong>　※腫瘍のsBRCAとは別概念</td></tr>
+<tr><td>検査法</td><td>NGS（日本ではBRCA1/2遺伝子検査 保険適用）</td></tr>
+<tr><td>重要事項</td><td><strong>必ず遺伝カウンセリング体制下で実施</strong>（家族への影響を含む説明・同意が必要）</td></tr>
+</table>
+</div>
+</div>
+
+<div class="sep"></div>
+
+<!-- ⑥ エンハーツ -->
+<div id="s5">
+<h2><span class="sn">6</span>エンハーツ（T-DXd）— HER2-low/ultralow × 化学療法未使用</h2>
+<div class="info"><strong>DESTINY-Breast06（2025年1月 FDA承認）：</strong>化学療法なしで内分泌療法後に直接T-DXdへ移行できる道が開いた。HR+/HER2-low/ultralowの大多数が対象となる。</div>
+
+<div class="card">
+  <div class="card-hd" style="background:linear-gradient(135deg,#f0fbf4,#e0f5e8)">
+    <div class="ico" style="background:#1a7a4a;color:#fff">💉</div>
+    <div>
+      <div class="nm">エンハーツ（T-DXd）</div>
+      <div class="dsub">トラスツズマブ デルクステカン / 第一三共・アストラゼネカ</div>
+      <div class="badges">
+        <span class="badge ok">🇯🇵 収載（HER2-low・ultralow適応）</span>
+        <span class="badge pu">静注・3週ごと</span>
+      </div>
+    </div>
+  </div>
+  <table>
+  <tr><th width="28%">項目</th><th>内容</th></tr>
+  <tr><td>対象患者</td><td><strong>HER2-low（IHC 1+ or 2+/ISH-）またはHER2-ultralow（IHC 0 with 微弱膜染色）</strong>、転移化学療法歴なし、ET 2ライン以上またはCDK4/6i+ET後6ヶ月以内増悪（90.4%がCDK4/6阻害薬前治療歴あり）</td></tr>
+  <tr><td>用法・用量</td><td><strong>5.4 mg/kg 静脈内投与、3週ごと</strong></td></tr>
+  <tr><td>主要結果</td><td>DESTINY-Breast06（NEJM 2024）：PFS 13.2ヶ月 vs 8.1ヶ月（HR 0.62, p&lt;0.0001）<br>疼痛悪化中央値：22.0ヶ月 vs 6.3ヶ月（T-DXd優位）</td></tr>
+  <tr><td>主な副作用</td><td>ILD（全G: 11.3%、G5: 0.7%）・悪心・嘔吐・倦怠感・脱毛</td></tr>
+  </table>
+  <div class="pfs">
+    <div class="pt">PFS中央値（DESTINY-Breast06 HER2-low集団）</div>
+    <div class="bar"><div class="bf" style="width:100%;background:#1a7a4a"></div></div>
+    <div class="pv"><span><strong>T-DXd 13.2ヶ月</strong></span><span style="color:#999">HR 0.62, p&lt;0.0001</span></div>
+    <div class="bar"><div class="bf" style="width:61%;background:#bbb"></div></div>
+    <div class="pv"><span style="color:#888">化学療法 8.1ヶ月</span></div>
+  </div>
+</div>
+<div class="warn"><b>⚠️ ILD（間質性肺炎）モニタリング</b>投与前後の呼吸症状・胸部X線確認が必須。G1以上のILD出現時は即時専門科紹介と投与中断を検討。G5（死亡例）報告あり。</div>
+
+<div class="cdx">
+<div class="cdx-t"><span>🔬</span>コンパニオン診断：HER2発現評価</div>
+<table>
+<tr><th width="26%">項目</th><th>内容</th></tr>
+<tr><td>検体</td><td>腫瘍組織（FFPE）が原則。<strong>転移巣の再生検を強く推奨</strong></td></tr>
+<tr><td>HER2-low判定</td><td>IHC 1+、またはIHC 2+/ISH陰性。IHC 2+の場合は<strong>必ずISH（FISH/DISH）で増幅除外</strong></td></tr>
+<tr><td>HER2-ultralow判定</td><td>IHC 0 with 微弱な膜染色。Ventana 4B5アッセイ（FDA承認CDx）。<strong>病理医の熟練が必要・施設間差に注意</strong></td></tr>
+<tr><td>重要概念</td><td>HER2 IHC 0かつ膜染色なし（真のultralow非該当）のみが対象外。</td></tr>
+</table>
+</div>
+</div>
+
+<div class="sep"></div>
+
+<!-- ⑦ ダトロウェイ -->
+<div id="s6">
+<h2><span class="sn">7</span>ダトロウェイ（Dato-DXd）— 化学療法後 ✅ 日本収載</h2>
+<div class="card">
+  <div class="card-hd" style="background:linear-gradient(135deg,#f5f0fb,#ede0f8)">
+    <div class="ico" style="background:#5a3a8c;color:#fff">💉</div>
+    <div>
+      <div class="nm">ダトロウェイ点滴静注（Dato-DXd）</div>
+      <div class="dsub">ダトポタマブ デルクステカン / 第一三共・アストラゼネカ</div>
+      <div class="badges">
+        <span class="badge ok">🇯🇵 2025年3月19日 薬価収載・発売</span>
+        <span class="badge pu">静注・3週ごと</span>
+      </div>
+    </div>
+  </div>
+  <table>
+  <tr><th width="28%">項目</th><th>内容</th></tr>
+  <tr><td>薬剤クラス</td><td>TROP2標的ADC（抗TROP2抗体＋DXd）。HER2発現に依存しない。HER2 IHC 0でも使用可能。</td></tr>
+  <tr><td>日本適応</td><td>HR+/HER2-（<strong>HER2-low・ultralow含む</strong>）転移乳がん：内分泌療法歴あり かつ <strong>化学療法後</strong>に増悪した患者</td></tr>
+  <tr><td>用法・用量</td><td><strong>6 mg/kg 静脈内投与、3週ごと</strong></td></tr>
+  <tr><td>根拠試験</td><td>TROPION-Breast01（JCO 2025）：PFS 7.0ヶ月 vs 4.9ヶ月（HR 0.63, p&lt;0.001）<br>OS有意差なし（後治療不均衡のため：対照群でのADC使用率24% vs Dato-DXd群12.3%）</td></tr>
+  <tr><td>主な副作用</td><td>口内炎・脱毛・倦怠感・悪心。ILDはT-DXdより低率。</td></tr>
+  <tr><td>コンパニオン診断</td><td><strong>TROP2発現検査は現時点で必須なし</strong></td></tr>
+  </table>
+  <div class="pfs">
+    <div class="pt">PFS中央値（TROPION-Breast01）</div>
+    <div class="bar"><div class="bf" style="width:78%;background:#5a3a8c"></div></div>
+    <div class="pv"><span><strong>Dato-DXd 7.0ヶ月</strong></span><span style="color:#999">HR 0.63, p&lt;0.001</span></div>
+    <div class="bar"><div class="bf" style="width:54%;background:#bbb"></div></div>
+    <div class="pv"><span style="color:#888">化学療法 4.9ヶ月</span></div>
+  </div>
+</div>
+</div>
+
+<div class="sep"></div>
+
+<!-- ⑧ トロデルビ 🆕 -->
+<div id="s6b">
+<h2><span class="sn">8</span>トロデルビ（サシツズマブ ゴビテカン）— 化学療法2〜4ライン後　✅【2026年3月23日 日本承認】</h2>
+
+<div class="info">
+  トロデルビはすでに2024年11月からHR陰性/HER2陰性（トリプルネガティブ）乳がんで日本収載済み。2026年3月23日、HR+/HER2-乳がんへの適応拡大が承認された。日本においてTROP2標的ADCとして2剤目の適応（ダトロウェイに続く）。
+</div>
+
+<div class="card">
+  <div class="card-hd" style="background:linear-gradient(135deg,#fff5f0,#ffe8d8)">
+    <div class="ico" style="background:#c05000;color:#fff">💉</div>
+    <div>
+      <div class="nm">トロデルビ点滴静注用200mg（サシツズマブ ゴビテカン）</div>
+      <div class="dsub">ギリアド・サイエンシズ</div>
+      <div class="badges">
+        <span class="badge new">🆕 HR+/HER2- 2026年3月23日 承認</span>
+        <span class="badge ok">TNBC：2024年11月収載済み</span>
+        <span class="badge pu">静注・3週ごと（1・8日目）</span>
+      </div>
+    </div>
+  </div>
+  <table>
+  <tr><th width="28%">項目</th><th>内容</th></tr>
+  <tr><td>薬剤クラス</td><td>TROP2標的ADC（抗TROP2抗体＋SN-38：トポイソメラーゼI阻害薬）。ダトロウェイと同一ターゲットだがペイロード（SN-38）が異なる。</td></tr>
+  <tr><td>適応（HR+/HER2-）</td><td>化学療法歴があるHR+/HER2-の手術不能または再発乳がん<br>前治療条件：タキサン・内分泌療法・CDK4/6阻害薬歴があり、転移性疾患に対して<strong>2〜4ラインの化学療法歴</strong>がある患者</td></tr>
+  <tr><td>用法・用量</td><td><strong>10 mg/kg 静脈内投与、21日間を1サイクルとし各サイクルの1日目および8日目に投与</strong></td></tr>
+  <tr><td>根拠試験</td><td>TROPiCS-02試験（Lancet 2023）＋国内第2相ASCENT-J02試験<br>PFS：5.5ヶ月 vs 4.0ヶ月（HR 0.66, p&lt;0.001）<br>OS：14.4ヶ月 vs 11.2ヶ月（HR 0.79, p=0.02）　→ <strong>OSの有意改善を示した点がダトロウェイと大きく異なる</strong></td></tr>
+  <tr><td>対象集団の特徴</td><td>中央値48ヶ月以上の転移治療歴がある重治療歴集団。ダトロウェイより後ラインを想定。</td></tr>
+  <tr><td>主な副作用</td><td>好中球減少（G3-4: 51%）・下痢（G3-4: 9%）・悪心・脱毛・疲労・貧血<br>重度の好中球減少と下痢は特に注意が必要</td></tr>
+  <tr><td>コンパニオン診断</td><td><strong>TROP2発現検査は現時点で必須なし</strong>（TROPiCS-02試験は全患者対象）</td></tr>
+  <tr><td>ダトロウェイとの違い</td><td>ペイロード異なる（SN-38 vs DXd）。前治療化学療法ライン数が多い（2〜4ライン vs 1〜2ライン）。OSの有意改善を示した点がトロデルビの強み。</td></tr>
+  </table>
+  <div class="pfs">
+    <div class="pt">PFS・OS中央値（TROPiCS-02 HR+/HER2-集団）</div>
+    <div class="bar"><div class="bf" style="width:60%;background:#c05000"></div></div>
+    <div class="pv"><span><strong>トロデルビ PFS 5.5ヶ月</strong></span><span style="color:#999">HR 0.66, p&lt;0.001</span></div>
+    <div class="bar"><div class="bf" style="width:44%;background:#bbb"></div></div>
+    <div class="pv"><span style="color:#888">化学療法 PFS 4.0ヶ月</span></div>
+    <div class="bar" style="margin-top:6px"><div class="bf" style="width:100%;background:#c05000;opacity:.7"></div></div>
+    <div class="pv"><span><strong>トロデルビ OS 14.4ヶ月</strong></span><span style="color:#999">HR 0.79, p=0.02</span></div>
+    <div class="bar"><div class="bf" style="width:78%;background:#bbb"></div></div>
+    <div class="pv"><span style="color:#888">化学療法 OS 11.2ヶ月</span></div>
+  </div>
+</div>
+<div class="warn"><b>⚠️ 好中球減少・重度の下痢</b>好中球減少（G3-4: 51%）と重度の下痢は特に注意が必要。G-CSFの予防投与やロペラミド等による下痢管理を事前に計画すること。</div>
+</div>
+
+<div class="sep"></div>
+
+<!-- ⑨ シーケンス -->
+<div id="s7">
+<h2><span class="sn">9</span>治療シーケンシングの考え方（2026年3月23日更新）</h2>
+<p style="font-size:12px;color:#888;margin-bottom:14px">※ 直接比較試験（head-to-head trial）はほぼなし。推論的整理。</p>
+
+<div class="seq-box">
+  <span class="st" style="background:#e8f0fd;color:#1a4a9a">1次治療</span>
+  <div>内分泌療法 ＋ CDK4/6阻害薬（リボシクリブ / パルボシクリブ / アベマシクリブ）</div>
+</div>
+<div class="arr">↓ 増悪・液体生検（ESR1 / PIK3CA / AKT1 / PTEN / gBRCA変異確認）</div>
+<div class="seq-box">
+  <span class="st" style="background:#fdf4e6;color:#a06010">2次治療（バイオマーカー陽性・内分泌療法継続可能）</span>
+  <div>
+    ESR1変異 → <strong>イムルリオ ✅</strong>（またはエラセストラント ⚠️未収載）<br>
+    PIK3CA/AKT1/PTEN変異 → <strong>トルカプ＋フルベストラント ✅</strong><br>
+    gBRCA変異 → <strong>オラパリブ ✅ / タラゾパリブ ✅</strong><br>
+    変異なし/内分泌継続可 → <strong>エベロリムス＋エキセメスタン ✅</strong>
+  </div>
+</div>
+<div class="arr">↓ 内分泌療法の限界 / HER2発現再評価（転移巣生検）</div>
+<div class="seq-box">
+  <span class="st" style="background:#e6f4ea;color:#1a6a2a">ADC移行（化学療法前でも可）</span>
+  <div>
+    HER2-low/ultralow かつ 化学療法未使用 → <strong>T-DXd（エンハーツ）✅</strong>（DB06根拠）<br>
+    HER2 IHC 0（非ultralow）または 化学療法1〜2ライン後 → <strong>Dato-DXd（ダトロウェイ）✅</strong>
+  </div>
+</div>
+<div class="arr">↓ 化学療法2〜4ラインを経た後ライン</div>
+<div class="seq-box">
+  <span class="st" style="background:#fff0e0;color:#c05000">後ラインADC 🆕</span>
+  <div>
+    化学療法2〜4ライン後 → <strong>トロデルビ（サシツズマブゴビテカン）✅ 2026年3月23日承認</strong><br>
+    <span style="font-size:12px;color:#666">OSの有意改善を示した唯一のTROP2-ADC（TROPiCS-02試験）。ペイロードがSN-38のためダトロウェイとの交差耐性パターンが異なる可能性あり。</span>
+  </div>
+</div>
+
+<div class="note" style="margin-top:14px">
+  <strong>⚠️ 今後の大きな問い：補助療法T-DXd普及後</strong><br>
+  DESTINY-Breast05でT-DXdが術後補助療法（vs T-DM1）で3年iDFS 92.4% vs 83.7%（HR 0.47）を達成。補助療法標準がT-DXdになれば転移再発後の「T-DXd使用済み患者」が増加する。再発後T-DXd再投与の有効性データはほぼなく、全体シーケンスを設計した試験が急務。
+</div>
+</div>
+
+<div class="sep"></div>
+
+<!-- ⑩ CDx一覧 -->
+<div id="s8">
+<h2><span class="sn">10</span>コンパニオン診断 一覧</h2>
+<div style="overflow-x:auto">
+<table style="min-width:600px">
+<tr>
+  <th>薬剤</th>
+  <th>日本状況</th>
+  <th>バイオマーカー</th>
+  <th>検体</th>
+  <th>検査法</th>
+</tr>
+<tr><td><strong>イムルリオ</strong></td><td><span class="badge ok">✅ 2025年12月</span></td><td>ESR1遺伝子変異</td><td>血液（ctDNA）第1選択</td><td>NGS / ddPCR<br>FoundationOne Liquid CDx</td></tr>
+<tr><td><strong>エラセストラント</strong></td><td><span class="badge ng">⚠️ 未収載</span></td><td>ESR1遺伝子変異</td><td>血液（ctDNA）第1選択</td><td>NGS / ddPCR</td></tr>
+<tr><td><strong>トルカプ</strong></td><td><span class="badge ok">✅ 2024年3月</span></td><td>PIK3CA/AKT1/PTEN変異</td><td>組織（FFPE）または血液</td><td>NGS（FoundationOne CDx）<br>日本保険適用</td></tr>
+<tr><td><strong>アルペリシブ</strong></td><td><span class="badge ng">⚠️ 未収載</span></td><td>PIK3CA変異（のみ）</td><td>組織（FFPE）または血液</td><td>NGS（FoundationOne CDx）</td></tr>
+<tr><td><strong>エンハーツ（HER2-low）</strong></td><td><span class="badge ok">✅ 収載</span></td><td>HER2 IHC 1+ or 2+/ISH-</td><td>腫瘍組織（FFPE）</td><td>HER2 IHC＋ISH<br>通常の病理検査</td></tr>
+<tr><td><strong>エンハーツ（HER2-ultralow）</strong></td><td><span class="badge ok">✅ 収載</span></td><td>IHC 0 with 微弱膜染色</td><td>腫瘍組織（FFPE）</td><td>HER2 IHC<br>Ventana 4B5アッセイ</td></tr>
+<tr><td><strong>ダトロウェイ</strong></td><td><span class="badge ok">✅ 2025年3月</span></td><td colspan="3" style="color:#888;text-align:center">TROP2発現検査は現時点で必須なし</td></tr>
+<tr><td><strong>トロデルビ</strong></td><td><span class="badge new">🆕 2026年3月23日</span></td><td colspan="3" style="color:#888;text-align:center">TROP2発現検査は現時点で必須なし（TROPiCS-02は全患者対象）</td></tr>
+<tr><td><strong>オラパリブ</strong></td><td><span class="badge ok">✅ 収載</span></td><td>gBRCA1/2変異</td><td>血液（生殖細胞系列）</td><td>NGS・遺伝カウンセリング必須</td></tr>
+<tr><td><strong>タラゾパリブ</strong></td><td><span class="badge ok">✅ 2024年4月</span></td><td>gBRCA1/2変異</td><td>血液（生殖細胞系列）</td><td>NGS・遺伝カウンセリング必須</td></tr>
+</table>
+</div>
+<div class="note" style="margin-top:14px;font-size:12px">
+  ⚠️【日本未収載】薬剤（エラセストラント・アルペリシブ）は日本国内では保険診療で使用不可。治験または患者申出療養等の枠組みでの使用に限られる。<br>
+  ※ 本情報は2026年3月23日時点。最新の添付文書・保険適用通知を必ず確認のこと。<br>
+  ※ 直接比較試験のない薬剤間の選択は、バイオマーカー・前治療歴・副作用プロファイル・患者の生活状況を総合的に判断する。
+</div>
+</div>
+
+</div>
+
+<footer>
+  総合犬山中央病院 乳腺外科<br>
+  参照：EMERALD / EMBER-3 / SOLAR-1 / CAPItello-291 / OlympiAD / EMBRACA<br>
+  DESTINY-Breast04・05・06 / TROPION-Breast01 / TROPiCS-02 / 各薬剤添付文書（2026年3月23日）<br>
+  <span style="font-size:10px;opacity:.6">本資料は医師向け参照用。最新ガイドライン・添付文書を必ず確認のこと。</span>
+</footer>
+</body>
+</html>
